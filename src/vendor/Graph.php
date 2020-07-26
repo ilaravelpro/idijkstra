@@ -55,6 +55,7 @@ class Graph
     public function paths_to($start, $dest)
     {
         foreach ($this->prev as $index => $items) {
+            $this->ignors[] = [];
             if (count($items) > 0) $this->check($items, $index);
             else unset($this->prev[$index]);
         }
@@ -91,10 +92,10 @@ class Graph
         if (($key = array_search($source, $discovered)) !== false) unset($discovered[$key]);
     }
 
-    public function getpath($from, $to)
+    public function getpaths($from, $to)
     {
-        list($distances, $prev) = $this->paths_from($from);
-        return $this->paths_to($prev, $to);
+        $this->paths_from($from);
+        return $this->paths_to($from, $to);
     }
 
 }
