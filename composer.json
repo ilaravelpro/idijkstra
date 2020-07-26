@@ -1,0 +1,25 @@
+{
+    "name": "ilaravel/idijkstra",
+    "description": "iLaravel iDijkstra",
+    "keywords": ["laravel","dijkstra", "routing", "graph", "geo path", "geo"],
+    "homepage": "https://ilaravel.iamir.net/packages/idijkstra",
+    "license": "MIT",
+    "authors": [
+        {
+            "name" : "iamirnet",
+            "email" : "me@iamir.net",
+            "homepage": "https://iamir.net",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "iLaravel\\iDijkstra\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
