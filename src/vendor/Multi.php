@@ -3,7 +3,7 @@
 
 namespace iLaravel\iDijkstra\Vendor;
 
-class Graph
+class Multi
 {
     public $nodes = array();
 
