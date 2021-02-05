@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Author: Amir Hossein Jahani | iAmir.net
+ * Last modified: 12/2/20, 9:59 AM
+ * Copyright (c) 2021. Powered by iamir.net
+ */
 
 namespace iLaravel\iDijkstra\Vendor;
 
