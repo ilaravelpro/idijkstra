@@ -21,7 +21,7 @@ class PriorityQueue {
         $this->comparator = $comparator;
     }
 
-     function add($x) {
+    function add($x) {
         $this->size = $this->size + 1;
 
         if($this->liststart == null) {
